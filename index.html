@@ -47,44 +47,43 @@
     }
 
     .profile-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
-.profile-photo-container {
-    margin-bottom: 1rem;
-}
+    .profile-photo-container {
+      margin-bottom: 1rem;
+    }
 
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #eee;
-}
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #eee;
+    }
 
-.profile-details p {
-    margin: 0.3rem 0;
-}
+    .profile-details p {
+      margin: 0.3rem 0;
+    }
 
-.profile-details p:first-of-type {
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-}
+    .profile-details p:first-of-type {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
 
-.profile-details p:nth-of-type(2) {
-    font-weight: 300;
-    color: #555;
-}
-
+    .profile-details p:nth-of-type(2) {
+      font-weight: 300;
+      color: #555;
+    }
 
     /* About Me and Explore My Work Sections */
     section {
@@ -108,6 +107,23 @@
     section p {
       line-height: 1.7;
       color: #080806;
+    }
+
+    /* "Download CV" Link Style */
+    .download-cv {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #3282b8;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-cv:hover {
+      background-color: #0f4c75;
     }
 
     /* Skills Container */
@@ -189,16 +205,19 @@
 
   <main>
     <!-- Profile Section -->
-   
     <div class="profile-section">
-    <div class="profile-photo-container">
-        <img src="https://assets.onecompiler.app/434muja7v/434muk9ch/Bernard_Photo.JPG" alt="Bernard Banda" class="profile-photo" />
-    </div>
-    <div class="profile-details">
+      <div class="profile-photo-container">
+        <img 
+          src="https://assets.onecompiler.app/434muja7v/434muk9ch/Bernard_Photo.JPG" 
+          alt="Bernard Banda" 
+          class="profile-photo" 
+        />
+      </div>
+      <div class="profile-details">
         <p>Bernard Banda MPH, CPH</p>
         <p><strong>Epidemiologist | Biostatistician | M&E Expert</strong></p>
+      </div>
     </div>
-</div>
 
     <!-- About Me -->
     <section>
@@ -209,6 +228,8 @@
         lies in translating complex data into actionable insights that inform
         policy and improve community health outcomes.
       </p>
+      <!-- Download CV link pointing to your CV page (e.g., cv.html) -->
+      <a href="cv.html" class="download-cv" target="_blank">Download CV</a>
     </section>
 
     <!-- Explore My Work -->
@@ -231,6 +252,12 @@
           Skilled in utilizing DHIS2, REDCap, SurveyCTO, and ODK for efficient
           data collection, management, and analysis.
         </p>
+         <p>
+          <!-- Link to your "Data Collection.html" page -->
+          <a href="Data-collection.html" target="_blank" style="color: #0f4c75; font-weight: 600;">
+            Sample Data Collection Tools
+          </a>
+        </p>
         <div class="icons">
           <img src="assets/images/dhis2.png" alt="DHIS2" />
           <img src="assets/images/RedCap.png" alt="REDCap" />
@@ -239,12 +266,18 @@
         </div>
       </div>
 
-      <!-- Panel 2 -->
+      <!-- Panel 2 (Data Analysis) -->
       <div class="panel" id="panel-2">
         <h2>Statistical Analysis</h2>
         <p>
           Proficient in utilizing R Studio, Excel, SAS, and NVIVO for advanced
           data analysis, statistical modeling, and qualitative research.
+        </p>
+        <p>
+          <!-- Link to your "capstone-analysis.html" page -->
+          <a href="capstone-analysis.html" target="_blank" style="color: #0f4c75; font-weight: 600;">
+            Sample Analysis
+          </a>
         </p>
         <div class="icons">
           <img src="assets/images/RStudio.png" alt="R Studio" />
@@ -254,12 +287,18 @@
         </div>
       </div>
 
-      <!-- Panel 3 -->
+      <!-- Panel 3 (Data Viz) -->
       <div class="panel" id="panel-3">
         <h2>Data Viz</h2>
         <p>
           Experienced in using Power BI, Tableau, Looker, QGIS, and Canva to
           create insightful visualizations.
+        </p>
+        <p>
+          <!-- Link to your "shiny-app.html" page -->
+          <a href="shiny-app.html" target="_blank" style="color: #0f4c75; font-weight: 600;">
+            Explore My Visualizations
+          </a>
         </p>
         <div class="icons">
           <img src="assets/images/power-bi_.png" alt="Power BI" />
