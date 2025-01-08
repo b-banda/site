@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Writing Sample</title>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #0f4c75;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        /* PDF Container Styling */
+        .pdf-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+
+        embed {
+            border: none;
+            width: 100%;
+            height: 700px;
+        }
+
+        /* Footer Styling */
+        footer {
+            font-size: 0.9rem;
+            color: #555;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        footer a {
+            color: #3282b8;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #0f4c75;
+        }
+
+        /* Button Styling */
+        .view-full {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background: #3282b8;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, transform 0.3s ease;
+            text-align: center;
+        }
+
+        .view-full:hover {
+            background: #0f4c75;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .pdf-container {
+                width: 95%;
+            }
+
+            embed {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Capstone Writing Sample</h1>
+    <div class="pdf-container">
+        <embed src="https://raw.githubusercontent.com/your-username/your-repository/main/sample-writing.pdf" type="application/pdf">
+    </div>
+    <a href="https://raw.githubusercontent.com/your-username/your-repository/main/sample-writing.pdf" target="_blank" class="view-full">View Full Document</a>
+    <footer>
+        Hosted on <a href="https://github.com" target="_blank">GitHub</a>
+    </footer>
+</body>
+</html>
